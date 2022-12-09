@@ -1,0 +1,241 @@
+C:\Users\ousso\Documents\Ecole\2A\Git\tp_final>git init
+
+C:\Users\ousso\Documents\Ecole\2A\Git\tp_final>git status
+On branch master
+
+No commits yet
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        images/
+        index.html
+        polices/
+        style.css
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+C:\Users\ousso\Documents\Ecole\2A\Git\tp_final>git add --all
+
+C:\Users\ousso\Documents\Ecole\2A\Git\tp_final>git status
+On branch master
+
+No commits yet
+
+Changes to be committed:
+  (use "git rm --cached <file>..." to unstage)
+        new file:   images/bulle.png
+        new file:   images/facebook.png
+        new file:   images/flecheblanchedroite.png
+        new file:   images/flickr.png
+        new file:   images/fond_degraderouge.png
+        new file:   images/fond_jaune.png
+        new file:   images/ico_epingle.png
+        new file:   images/ico_liensexterne.png
+        new file:   images/ico_top.png
+        new file:   images/ombre.png
+        new file:   images/photo1.jpg
+        new file:   images/photo2.jpg
+        new file:   images/photo3.jpg
+        new file:   images/photo4.jpg
+        new file:   images/rss.png
+        new file:   images/sanfrancisco.jpg
+        new file:   images/separateur.png
+        new file:   images/twitter.png
+        new file:   images/vimeo.png
+        new file:   images/zozor_classe.png
+        new file:   images/zozor_logo.png
+        new file:   index.html
+        new file:   polices/ballpark.eot
+        new file:   polices/ballpark.svg
+        new file:   polices/ballpark.ttf
+        new file:   polices/ballpark.woff
+        new file:   polices/dayrom.eot
+        new file:   polices/dayrom.svg
+        new file:   polices/dayrom.ttf
+        new file:   polices/dayrom.woff
+        new file:   style.css
+
+C:\Users\ousso\Documents\Ecole\2A\Git\tp_final>git log
+commit 12b9dc7bc8beb32557a11eabb57a8fb8109e3adb (HEAD -> master)
+Author: OussBth <103314967+OussBth@users.noreply.github.com>
+Date:   Fri Dec 9 14:49:58 2022 +0100
+
+    Commit initial
+
+C:\Users\ousso\Documents\Ecole\2A\Git\tp_final>git checkout -b feature/redesign
+Switched to a new branch 'feature/redesign'
+
+C:\Users\ousso\Documents\Ecole\2A\Git\tp_final>git branch
+* feature/redesign
+  master
+
+C:\Users\ousso\Documents\Ecole\2A\Git\tp_final>git status
+On branch feature/redesign
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   index.html
+
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+C:\Users\ousso\Documents\Ecole\2A\Git\tp_final>git commit -am "remove author section"
+[feature/redesign 1c525e4] remove author section
+ 1 file changed, 8 deletions(-)
+
+C:\Users\ousso\Documents\Ecole\2A\Git\tp_final>git status
+On branch feature/redesign
+nothing to commit, working tree clean
+
+C:\Users\ousso\Documents\Ecole\2A\Git\tp_final>git log
+commit 1c525e49961527ef00464638b31297ef2972f419 (HEAD -> feature/redesign)
+Author: OussBth <103314967+OussBth@users.noreply.github.com>
+Date:   Fri Dec 9 15:01:52 2022 +0100
+
+    remove author section
+
+commit 12b9dc7bc8beb32557a11eabb57a8fb8109e3adb (master)
+Author: OussBth <103314967+OussBth@users.noreply.github.com>
+Date:   Fri Dec 9 14:49:58 2022 +0100
+
+    Commit initial
+
+C:\Users\ousso\Documents\Ecole\2A\Git\tp_final>git commit -am "Make nav a blue"
+[feature/redesign 9e51d7f] Make nav a blue
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+C:\Users\ousso\Documents\Ecole\2A\Git\tp_final>git log
+commit 9e51d7f1ba0f299493dcef7cbd2b471ad34eb620 (HEAD -> feature/redesign)
+Author: OussBth <103314967+OussBth@users.noreply.github.com>
+Date:   Fri Dec 9 15:05:06 2022 +0100
+
+    Make nav a blue
+
+commit 1c525e49961527ef00464638b31297ef2972f419
+Author: OussBth <103314967+OussBth@users.noreply.github.com>
+Date:   Fri Dec 9 15:01:52 2022 +0100
+
+    remove author section
+
+commit 12b9dc7bc8beb32557a11eabb57a8fb8109e3adb (master)
+Author: OussBth <103314967+OussBth@users.noreply.github.com>
+Date:   Fri Dec 9 14:49:58 2022 +0100
+
+    Commit initial
+
+C:\Users\ousso\Documents\Ecole\2A\Git\tp_final>git commit -am "add .gitignore"
+On branch feature/redesign
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        .gitignore
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+C:\Users\ousso\Documents\Ecole\2A\Git\tp_final>git commit -am "add .gitignore"
+
+C:\Users\ousso\Documents\Ecole\2A\Git\tp_final>git add
+Nothing specified, nothing added.
+hint: Maybe you wanted to say 'git add .'?
+hint: Turn this message off by running
+hint: "git config advice.addEmptyPathspec false"
+
+C:\Users\ousso\Documents\Ecole\2A\Git\tp_final>git add .gitignore
+
+C:\Users\ousso\Documents\Ecole\2A\Git\tp_final>git commit -am "add .gitignore"
+[feature/redesign 8ff6a4a] add .gitignore
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 .gitignore
+
+C:\Users\ousso\Documents\Ecole\2A\Git\tp_final>git log
+commit 8ff6a4a0152060731622306fbaa37857d588371d (HEAD -> feature/redesign)
+Author: OussBth <103314967+OussBth@users.noreply.github.com>
+Date:   Fri Dec 9 15:07:05 2022 +0100
+
+    add .gitignore
+
+commit 9e51d7f1ba0f299493dcef7cbd2b471ad34eb620
+Author: OussBth <103314967+OussBth@users.noreply.github.com>
+Date:   Fri Dec 9 15:05:06 2022 +0100
+
+    Make nav a blue
+
+commit 1c525e49961527ef00464638b31297ef2972f419
+Author: OussBth <103314967+OussBth@users.noreply.github.com>
+Date:   Fri Dec 9 15:01:52 2022 +0100
+
+    remove author section
+
+commit 12b9dc7bc8beb32557a11eabb57a8fb8109e3adb (master)
+Author: OussBth <103314967+OussBth@users.noreply.github.com>
+Date:   Fri Dec 9 14:49:58 2022 +0100
+
+    Commit initial
+
+C:\Users\ousso\Documents\Ecole\2A\Git\tp_final>switch
+'switch' n’est pas reconnu en tant que commande interne
+ou externe, un programme exécutable ou un fichier de commandes.
+
+C:\Users\ousso\Documents\Ecole\2A\Git\tp_final>git switch
+fatal: missing branch or commit argument
+
+C:\Users\ousso\Documents\Ecole\2A\Git\tp_final>git switch master
+Switched to branch 'master'
+
+C:\Users\ousso\Documents\Ecole\2A\Git\tp_final>git branch
+  feature/redesign
+* master
+
+C:\Users\ousso\Documents\Ecole\2A\Git\tp_final>git switch feature/redesign
+Switched to branch 'feature/redesign'
+
+C:\Users\ousso\Documents\Ecole\2A\Git\tp_final>git switch master
+Switched to branch 'master'
+
+C:\Users\ousso\Documents\Ecole\2A\Git\tp_final>git switch feature/redesign
+
+C:\Users\ousso\Documents\Ecole\2A\Git\tp_final>git checkout -b hotfix/remove-buttons
+Switched to a new branch 'hotfix/remove-buttons'
+
+C:\Users\ousso\Documents\Ecole\2A\Git\tp_final>git branch
+  feature/redesign
+* hotfix/remove-buttons
+  master
+
+C:\Users\ousso\Documents\Ecole\2A\Git\tp_final>code
+
+C:\Users\ousso\Documents\Ecole\2A\Git\tp_final>code index.html
+
+C:\Users\ousso\Documents\Ecole\2A\Git\tp_final>git commit -am "Remove buttons from author section"
+[hotfix/remove-buttons cf8844c] Remove buttons from author section
+ 1 file changed, 1 deletion(-)
+
+C:\Users\ousso\Documents\Ecole\2A\Git\tp_final>git log
+commit cf8844c939bfa8bf2d80c961073c36f51b29e549 (HEAD -> hotfix/remove-buttons)
+Author: OussBth <103314967+OussBth@users.noreply.github.com>
+Date:   Fri Dec 9 15:19:22 2022 +0100
+
+    Remove buttons from author section
+
+commit 12b9dc7bc8beb32557a11eabb57a8fb8109e3adb (master)
+Author: OussBth <103314967+OussBth@users.noreply.github.com>
+Date:   Fri Dec 9 14:49:58 2022 +0100
+
+    Commit initial
+
+C:\Users\ousso\Documents\Ecole\2A\Git\tp_final>git status
+On branch hotfix/remove-buttons
+nothing to commit, working tree clean
+
+C:\Users\ousso\Documents\Ecole\2A\Git\tp_final>git switch master
+Switched to branch 'master'
+
+C:\Users\ousso\Documents\Ecole\2A\Git\tp_final>git merge hotfix/remove-buttons
+Updating 12b9dc7..cf8844c
+Fast-forward
+ index.html | 1 -
+ 1 file changed, 1 deletion(-)
+
+C:\Users\ousso\Documents\Ecole\2A\Git\tp_final>git branch -d hotfix/remove-buttons
+Deleted branch hotfix/remove-buttons (was cf8844c).
+
+C:\Users\ousso\Documents\Ecole\2A\Git\tp_final>*
